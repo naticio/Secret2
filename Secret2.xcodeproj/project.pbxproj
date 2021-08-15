@@ -11,6 +11,11 @@
 		B214328626C8AB7F00A65B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214328526C8AB7F00A65B5F /* ContentView.swift */; };
 		B214328826C8AB8100A65B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214328726C8AB8100A65B5F /* Assets.xcassets */; };
 		B214328B26C8AB8100A65B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214328A26C8AB8100A65B5F /* Preview Assets.xcassets */; };
+		B214329326C8AB9500A65B5F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214329226C8AB9500A65B5F /* SignUpView.swift */; };
+		B214329526C8ABCB00A65B5F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214329426C8ABCB00A65B5F /* SignInView.swift */; };
+		B214329826C8AC4200A65B5F /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214329726C8AC4200A65B5F /* FormField.swift */; };
+		B214329B26C8B50A00A65B5F /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214329A26C8B50A00A65B5F /* ButtonModifiers.swift */; };
+		B214329E26C8C6B300A65B5F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214329D26C8C6B300A65B5F /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		B214328726C8AB8100A65B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B214328A26C8AB8100A65B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B214328C26C8AB8100A65B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B214329226C8AB9500A65B5F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B214329426C8ABCB00A65B5F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B214329726C8AC4200A65B5F /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		B214329A26C8B50A00A65B5F /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
+		B214329D26C8C6B300A65B5F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				B214328326C8AB7F00A65B5F /* Secret2App.swift */,
+				B214329C26C8C69500A65B5F /* Utilities */,
+				B214329926C8B13500A65B5F /* Views */,
+				B214329626C8AC1700A65B5F /* Component */,
 				B214328526C8AB7F00A65B5F /* ContentView.swift */,
 				B214328726C8AB8100A65B5F /* Assets.xcassets */,
 				B214328C26C8AB8100A65B5F /* Info.plist */,
@@ -67,6 +80,32 @@
 				B214328A26C8AB8100A65B5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B214329626C8AC1700A65B5F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B214329726C8AC4200A65B5F /* FormField.swift */,
+				B214329A26C8B50A00A65B5F /* ButtonModifiers.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B214329926C8B13500A65B5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B214329426C8ABCB00A65B5F /* SignInView.swift */,
+				B214329226C8AB9500A65B5F /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B214329C26C8C69500A65B5F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B214329D26C8C6B300A65B5F /* ImagePicker.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B214329B26C8B50A00A65B5F /* ButtonModifiers.swift in Sources */,
+				B214329826C8AC4200A65B5F /* FormField.swift in Sources */,
 				B214328626C8AB7F00A65B5F /* ContentView.swift in Sources */,
+				B214329E26C8C6B300A65B5F /* ImagePicker.swift in Sources */,
+				B214329326C8AB9500A65B5F /* SignUpView.swift in Sources */,
+				B214329526C8ABCB00A65B5F /* SignInView.swift in Sources */,
 				B214328426C8AB7F00A65B5F /* Secret2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

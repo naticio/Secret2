@@ -11,7 +11,7 @@ import SwiftUI
 struct Secret2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignInView()
         }
     }
 }
