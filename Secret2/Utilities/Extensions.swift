@@ -23,9 +23,28 @@ extension Encodable {
 }
 
 extension Decodable {
-    init(fromDictionary: Any) throws {
+    init(fromDictionary: Any ) throws {
         let data = try JSONSerialization.data(withJSONObject: fromDictionary, options: .prettyPrinted)
         let decoder = JSONDecoder()
         self = try decoder.decode(Self.self, from: data)
     }
+}
+
+
+extension String {
+    func splitString() -> [String] {
+        var stringArray: [String] = []
+        
+        let trimmed = String(self.filter { !" \n\t\r".contains($0)}) //WTF IS THIS?  is like regex to format the incoming string
+        
+        for (index, _) in trimmed.enumerated(){
+            let prefixIndex = index + 1
+            let substringPrefix = String(trimmed.prefix(prefixIndex)).lowercased()
+            stringArray.append(substringPrefix)
+        }
+        
+        return stringArray
+    }
+        
+    
 }
