@@ -48,7 +48,7 @@ class StorageService {
                         changeRequest.commitChanges {
                             (error) in
                             if error != nil {
-                                onError(error.localizaedDescription)
+                                onError(error!.localizedDescription)
                                 return
                             }
                         }
@@ -57,6 +57,18 @@ class StorageService {
                     let firestoreUserId = AuthService.getUserId(userId: userId)
                     let user = User.init(uid: userId, email: email, profileImageUrl: metaImageUrl, username: username, searchName: username.splitString(), bio: "")
                     
+                    //extension to convert user into a dictionary
+                    guard let dict = try?user.asDictionary() else {return}
+                    
+                        firestoreUserId.setData(dict) {(error) in
+                            if error != nil {
+                                onError(error!.localizedDescription)
+                            }
+                        }
+                        
+                        //when we have success create an user
+                        onSuccess(user)
+                    }
                 }
             }
             
@@ -64,4 +76,3 @@ class StorageService {
         }
         
     }
-}
